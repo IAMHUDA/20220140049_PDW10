@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pendaftaran</h1>
+        </div>
+        <form id="peminatanForm" action="">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama"><br>
+            <label for="nim">NIM:</label><br>
+            <input type="text" id="nim" name="nim"><br>
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br>
+            
+            <label for="tanggal">Tanggal:</label><br>
+            <input type="date" id="tanggal" name="tanggal"><br>
+            
+            <label for="angkatan">Angkatan:</label><br>
+            <select id="angkatan" name="angkatan">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select><br>
+            
+            <div class="peminatan">
+                <p>Peminatan Bidang:</p>
+                <div class="radio-group">
+                    <input type="radio" name="peminatan" id="programing" value="programing">
+                    <label for="programing">Programming</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="peminatan" id="design" value="design">
+                    <label for="design">Design</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="peminatan" id="networking" value="networking">
+                    <label for="networking">Networking</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="peminatan" id="database" value="database">
+                    <label for="database">Database</label>
+                </div>
+            </div>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <audio id="alertSound" src="./assets/miaw.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
